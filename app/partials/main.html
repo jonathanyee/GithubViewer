@@ -1,0 +1,30 @@
+<div class="row">
+    <form name="myForm" ng-submit="search()">
+        Github Username: <input name="ghusername" ng-model="user" required> 
+        <span class="error" ng-show="myForm.ghusername.$error.required">Required!</span>
+        <input type="submit" id="submit" value="Search" />
+    </form>
+</div>
+
+<div class="languages row">
+    Languages:
+    <div class="">
+      <label class="check" ng-repeat="lang in languageFilter">
+        <input type="checkbox" ng-model="lang.selected">{{lang.name}}
+      </label>
+    </div>
+</div>
+
+<div class="row">
+    Repositories:
+    <ul class="repositories">
+        <li class="box" ng-repeat="repo in repositories | filterLanguages:languageFilter">
+          <a ng-href="{{repo.html_url}}">
+            <div class="top {{repo.language}}"></div>
+            <h2>{{repo.name}}</h2>
+            <h3>{{repo.language}}</h3>
+            <p>{{repo.description}}</p>
+          </a>
+        </li>
+    </ul>
+</div>

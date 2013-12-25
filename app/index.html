@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="GithubViewer">
+<head>
+  <meta charset="utf-8">
+  <title>GithubViewer</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="header">
+      <h1>Github Viewer</h1>
+    </div>
+
+    <div ng-view></div>
+    
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-route.min.js"></script>
+  <!-- // <script src="lib/bootstrap.min.js"></script> -->
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.languages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.check {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+}
+
+.repositories {
+  padding: 0;
+  list-style: none;
+}
+
+.repositories::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.box {
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+li.box a, 
+li.box a:visited {
+  display: block;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+li.box a:hover {
+  background: #fcfff4;
+background: -moz-linear-gradient(top,  #fcfff4 0%, #e9e9ce 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#e9e9ce));
+background: -webkit-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+background: -o-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+background: -ms-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+background: linear-gradient(to bottom,  #fcfff4 0%,#e9e9ce 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 );
+
+  text-decoration: none;
+}
+
+li.box h2, 
+li.box h3 {
+  margin: 5px 0 0 0;
+}
+
+li.box h3 {
+  font-size: 20px;
+}
+
+li.box p {
+  color: #333;
+}
+
+.top {
+  height: 5px;
+}
+
+.C {
+  background-color: #555;
+}
+
+.Go {
+  background-color: #8d04eb;
+}
+
+.Java {
+  background-color: #b07219;
+}
+
+.JavaScript {
+  background-color: #f15501;
+}
+
+.Scala {
+  background-color: #7dd3b0;
+}
+
+.Shell {
+  background-color:#5861ce;
+}
+
+.Groovy {
+  background-color:#e69f56;
+}
+
+.PHP {
+  background-color: #6e03c1;
+}
+
+.Python {
+  background-color: #3581ba;
+}
+
+.Ruby {
+  background-color: #701516;
+}
+
+.Objective-C {
+  background-color: #f15501;
+}
