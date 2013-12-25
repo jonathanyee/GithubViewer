@@ -78,13 +78,13 @@ li.box a:visited {
 
 li.box a:hover {
   background: #fcfff4;
-background: -moz-linear-gradient(top,  #fcfff4 0%, #e9e9ce 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#e9e9ce));
-background: -webkit-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
-background: -o-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
-background: -ms-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
-background: linear-gradient(to bottom,  #fcfff4 0%,#e9e9ce 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 );
+  background: -moz-linear-gradient(top,  #fcfff4 0%, #e9e9ce 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(100%,#e9e9ce));
+  background: -webkit-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+  background: -o-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+  background: -ms-linear-gradient(top,  #fcfff4 0%,#e9e9ce 100%);
+  background: linear-gradient(to bottom,  #fcfff4 0%,#e9e9ce 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=0 );
 
   text-decoration: none;
 }
@@ -100,6 +100,10 @@ li.box h3 {
 
 li.box p {
   color: #333;
+}
+
+.red {
+  color: #FF0000;
 }
 
 .top {
