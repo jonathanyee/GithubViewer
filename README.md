@@ -1,6 +1,6 @@
 # Github Viewer
 
-Angular.js project to view a user's public git repositories on Github.
+Angular.js project to view and filter by language a user's public git repositories on Github.
 
 
 ## Installation
