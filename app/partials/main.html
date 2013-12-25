@@ -1,10 +1,12 @@
 <div class="row">
     <form name="myForm" ng-submit="search()">
         Github Username: <input name="ghusername" ng-model="user" required> 
-        <span class="error" ng-show="myForm.ghusername.$error.required">Required!</span>
+        <span class="error red" ng-show="myForm.ghusername.$error.required">Required!</span>
         <input type="submit" id="submit" value="Search" />
     </form>
 </div>
+
+<div ng-if="error"><h4 class="red">Could not find user {{user}}</h4></div>
 
 <div class="languages row">
     Languages:
